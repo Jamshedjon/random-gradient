@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;800;900&display=swap);
+    
+    body {
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: 
+      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    }
+    button{
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    h1{
+      border-radius:5px;
+      padding: 20px 30px;
+      width: 100%;
+      max-width: 700px;
+      text-align: left;
+      font-size: 26px;
+      background: white;
+      text-align: center;
+    }
+    button {
+      background: #FBCA1F;
+      font-family: inherit;
+      padding: 0.6em 1.3em;
+      font-weight: 900;
+      font-size: 18px;
+      border: 3px solid black;
+      border-radius: 0.4em;
+      box-shadow: 0.1em 0.1em;
+    }
+    
+    button:hover {
+      transform: translate(-0.05em, -0.05em);
+      box-shadow: 0.15em 0.15em;
+    }
+    
+    button:active {
+      transform: translate(0.05em, 0.05em);
+      box-shadow: 0.05em 0.05em;
+    }
+    textarea{
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+      font-size: 20px;
+      width: 100%;
+      max-width: 520px;
+      height: 90px;
+      padding: 20px 30px;
+    }
+    
+  </style>
+  <title>Random-gradiendt</title>
+</head>
+<body>
+  <div id="main" class="main">  
+    <h1 >Random tugmasini bosish orqali random gradientni nusxalab olishingiz mumkin!</h1>
+    <textarea id="title" > linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);</textarea>
+    <br>
+    
+    
+    <button id="random">Random</button>
+    <button onclick="copyToClipboard()" id="copy">Copy code</button>
+    
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
