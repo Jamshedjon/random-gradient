@@ -15,7 +15,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-image: 
+      background: 
       linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
       linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     }
@@ -34,7 +34,6 @@
       text-align: center;
     }
     button {
-      background: #FBCA1F;
       font-family: inherit;
       padding: 0.6em 1.3em;
       font-weight: 900;
@@ -43,7 +42,9 @@
       border-radius: 0.4em;
       box-shadow: 0.1em 0.1em;
     }
-    
+    .color-btn{
+      background: #FBCA1F;
+    }
     button:hover {
       transform: translate(-0.05em, -0.05em);
       box-shadow: 0.15em 0.15em;
@@ -73,8 +74,8 @@
     <br>
     
     
-    <button id="random">Random</button>
-    <button onclick="copyToClipboard()" id="copy">Copy code</button>
+    <button class="color-btn" id="random">Random</button>
+    <button class="color-btn" onclick="copyToClipboard()" id="copy">Copy code</button>
     
   </div>
   <script src="./app.js"></script>
